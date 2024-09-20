@@ -53,6 +53,7 @@ nav {
 
 main{
     background-color: var(--clr-gray);
+    min-height: 50dvh;
 }
 
 .descuentos{
@@ -120,6 +121,7 @@ h3 {
 .lista-botones {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 1rem;
 }
 
@@ -135,7 +137,6 @@ h3 {
     font-weight: 600;
     padding: 1rem;
     font-size: .85rem;
-    width: 100%;
 }
 
 .boton-menu.active{
@@ -298,6 +299,7 @@ h3 {
 .carrito-acciones{
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0rem;
 }
 
 .carrito-acciones-vaciar{
@@ -365,5 +367,40 @@ h3 {
 @media screen and (max-width: 991px) {
     h1 {
         padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .carrito-producto {
+        flex-direction: column;
+    }
+    .footersuperior {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .carrito-acciones {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 }
