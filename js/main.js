@@ -82,13 +82,14 @@ function agregarAlCarrito(e) {
 
     Toastify({
         text: "Producto agregado",
-        duration: 3000,
+        duration: 2000,
         destination: "https://github.com/apvarun/toastify-js",
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "(#80b0c0)",
+          background: "#1f1d1c",
+          color: "#ffffff",
           borderRadius: "2rem",
           fontSize: ".75rem",
         },
